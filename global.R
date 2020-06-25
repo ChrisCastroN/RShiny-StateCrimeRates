@@ -11,7 +11,9 @@ source("data/parser.R")
 # GET parsed data from parser.R script into dataframes
 # =========================================================================
 dataframes <- list(
-    crimes = as.data.frame(get_crime_data("data/data.csv"))
+    
+    # la funcion get_crime_data, que esta en parser.R lee los datos del csv y les hace un tratamiento:
+    crimes = as.data.frame(get_crime_data("data/prueba1.csv"))
 )
 
 

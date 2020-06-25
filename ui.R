@@ -1,11 +1,11 @@
 shinyUI(fluidPage(
     tags$head(tags$link(rel="stylesheet", type="text/css", href="app.css")),
     
-    titlePanel("State Crime Rates Explorer"),
+    titlePanel("Explorador comunal de tasas de criminalidad"),
     
     mainPanel(
         p(class="text-small",
-          a(href="http://chrisrzhou.datanaut.io/", target="_blank", "by chrisrzhou"),
+          a(href="http://chrisrzhou.datanaut.io/", target="_blank", "por DataIntelligence"),
           a(href="https://github.com/chrisrzhou/RShiny-StateCrimeRates", target="_blank", icon("github")), " | ",
           a(href="http://bl.ocks.org/chrisrzhou", target="_blank", icon("cubes")), " | ",
           a(href="https://www.linkedin.com/in/chrisrzhou", target="_blank", icon("linkedin"))),
@@ -16,11 +16,11 @@ shinyUI(fluidPage(
         hr(),
         tabsetPanel(id="tabset",
                     tabPanel("Heatmaps",
-                             h2("Heatmaps"),
+                             h2("Mapas de calor"),
                              p(class="text-small", "Series of heatmaps visualizing crime rates in states.  Major recession periods are outlined in blue"),
                              p(class="text-small", "Three colors are used to display overall values of the data subset: blue (below average), red (above average), white (average)."),
                              hr(),
-                             h3("State-Time Heatmap"),
+                             h3("Mapa de calor Comuna-Tiempo"),
                              p(class="text-small", "This section visualizes heatmap of crime rates of states over the years."),
                              fluidRow(
                                  column(3,
